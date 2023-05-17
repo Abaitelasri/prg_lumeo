@@ -13,9 +13,10 @@ module.exports = {
       min: 2,
       max: 10
     },
-    /* migrations: {
+     migrations: {
+      directory: './migrations',
       tableName: 'knex_migrations'
-    }*/
+    }
   },
   production: {
     client: 'mysql2',
@@ -29,8 +30,9 @@ module.exports = {
       min: 2,
       max: 10
     },
-   /* migrations: {
+    migrations: {
+      directory: './migrations',
       tableName: 'knex_migrations'
-    }*/
+    }
   }
 };
