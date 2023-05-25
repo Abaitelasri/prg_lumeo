@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node index.js"
+    "dev":"nodemon index.js "
   },
-   "engines": {
+  "engines": {
     "node": "v18.15.0"
   },
   "keywords": [],
@@ -20,6 +19,7 @@
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "mysql2": "^3.3.0",
+    "nodemon": "^2.0.22",
     "objection": "^3.0.1"
   }
 }

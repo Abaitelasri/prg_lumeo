@@ -1,5 +1,4 @@
-const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '.env') });
+require('dotenv').config();
 
 module.exports = {
   development: {
@@ -14,8 +13,8 @@ module.exports = {
       min: 2,
       max: 10
     },
-    migrations: {
-      directory: path.resolve(__dirname, 'migrations'),
+     migrations: {
+      directory: './var/task/migrations',
       tableName: 'knex_migrations'
     }
   },
@@ -32,7 +31,7 @@ module.exports = {
       max: 10
     },
     migrations: {
-      directory: path.resolve(__dirname, 'migrations'),
+      directory: './var/task/migrations',
       tableName: 'knex_migrations'
     }
   }
